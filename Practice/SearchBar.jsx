@@ -12,7 +12,7 @@ const SearchBar = () => {
       .then(json => {
         const results = json.filter((user) => {
           return (
-            value && user && user.name && user.name.toLowerCase().includes(value)
+            value && user && user.name && user.name.toLowerCase().includes(value.toLowerCase())
           )
         })
         setResults(results)

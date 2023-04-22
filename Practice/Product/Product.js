@@ -16,7 +16,7 @@ const Product = () => {
     <pre>{JSON.stringify(product)}</pre>
 <div className='row'>
 <div className='col col-md-4 p-3'>
-<img src={product.image} width='100%' height='80%'/>
+<img src={product.image}  className='img-fluid'/>
 <h3>{product.title}</h3>
 
  <h5>Price: ${product.price}/-</h5>
