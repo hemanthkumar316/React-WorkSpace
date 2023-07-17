@@ -28,7 +28,7 @@ const Login = () => {
       errors.password = " * This field is required";
     }
     if (Object.keys(errors) != 0) {
-      return errors;
+      return errors; 
     } else {
       return true;
     }
