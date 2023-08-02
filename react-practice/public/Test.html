@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Navbar Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Sidebar</div>
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+      <a href="#" class="list-group-item list-group-item-action">Profile</a>
+      <a href="#" class="list-group-item list-group-item-action">Messages</a>
+      <a href="#" class="list-group-item list-group-item-action">Settings</a>
+    </div>
+  </div>
+  <!-- /Sidebar -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <button class="btn btn-primary" id="menu-toggle">Toggle Sidebar</button>
+    </nav>
+    <div class="container-fluid">
+      <h1 class="mt-4">Content Goes Here</h1>
+      <p>This is an example of a Bootstrap side navbar.</p>
+    </div>
+  </div>
+  <!-- /Page Content -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Toggle the sidebar
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+</script>
+
+</body>
+</html>
